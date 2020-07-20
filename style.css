@@ -5,59 +5,59 @@
 /* ---------> header */
 
 /* 色の上書き指定 */
-nav {
+header nav {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.navbar-light .navbar-nav .nav-link,
-.navbar-light .navbar-nav .show > .nav-link,
-.navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav .nav-link.active {
+header .navbar-light .navbar-nav .nav-link,
+header .navbar-light .navbar-nav .show > .nav-link,
+header .navbar-light .navbar-nav .nav-link:focus,
+header .navbar-light .navbar-nav .nav-link.active {
   color: #ffffff;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
+header .navbar-light .navbar-nav .nav-link:hover {
   color: #999999;
 }
 
-.dropdown-menu.show {
+header .dropdown-menu.show {
   background-color: #000000;
 }
 
-.dropdown-item:focus,
-.dropdown-item:hover {
+header .dropdown-item:focus,
+header .dropdown-item:hover {
   background-color: #664229;
   color: #ffffff;
 }
 
 /* バーの指定（min-1200px）　*/
-.navber {
+header .navber {
   height: 90px;
 }
 
-.img_size {
+header .img_size {
   width: 143px;
   height: 24.5px;
 }
 
-.navbar-expand-xl .navbar-collapse {
+header .navbar-expand-xl .navbar-collapse {
   justify-content: flex-end;
 }
 
-li .nav-item,
-.nav-link {
+header li .nav-item,
+header .nav-link {
   font-family: Verdana;
   font-size: 14px;
   font-weight: 300;
   height: 100%;
 }
 
-.navbar-expand-xl .navbar-nav .nav-link {
+header .navbar-expand-xl .navbar-nav .nav-link {
   padding: 26.5px 21px;
 }
 
 /* ドロップダウンメニューの上書き指定 */
-.dropdown-item {
+header .dropdown-item {
   color: #ffffff;
   font-family: Verdana;
   font-size: 14px;
@@ -65,7 +65,7 @@ li .nav-item,
   padding: 15px 30px;
 }
 
-.dropdown .dropdown-menu.show {
+header .dropdown .dropdown-menu.show {
   padding: 0px;
   margin: 0px;
   border: 0px;
@@ -73,51 +73,51 @@ li .nav-item,
   top: 82px;
 }
 
-.dropdown-toggle:after {
+header .dropdown-toggle:after {
   content: none;
 }
 
 @media (max-width: 1199px) {
   /* ホバー時の色取り消し */
-  .dropdown-item:focus,
-  .dropdown-item:hover {
+  header .dropdown-item:focus,
+  header .dropdown-item:hover {
     background-color: #000000;
     color: #ffffff;
   }
 
   /* 小画面時基本指定 */
-  .navber {
+  header .navber {
     height: 60px;
   }
 
-  nav {
+  header nav {
     background-color: rgba(0, 0, 0, 1);
   }
 
-  .navbar-expand-xl .navbar-nav .nav-link {
+  header .navbar-expand-xl .navbar-nav .nav-link {
     padding: 18px 0px;
   }
 
   /* マークの消去 */
-  button:focus {
+  header button:focus {
     outline: none;
   }
 
   /* ハンバーガーバーの再作成 */
-  .navbar-toggler,
-  .navbar-toggler span {
+  header .navbar-toggler,
+  header .navbar-toggler span {
     display: inline-block;
     transition: all 0.4s;
     box-sizing: border-box;
   }
 
-  .navbar-toggler {
+  header .navbar-toggler {
     position: relative;
     width: 20px;
     height: 16px;
   }
 
-  .navbar-toggler span {
+  header .navbar-toggler span {
     position: absolute;
     left: 0;
     width: 20px;
@@ -126,13 +126,13 @@ li .nav-item,
     border-radius: 2px;
   }
 
-  .navbar-toggler span:nth-of-type(1) {
+  header .navbar-toggler span:nth-of-type(1) {
     top: 0;
   }
-  .navbar-toggler span:nth-of-type(2) {
+  header .navbar-toggler span:nth-of-type(2) {
     top: 6px;
   }
-  .navbar-toggler span:nth-of-type(3) {
+  header .navbar-toggler span:nth-of-type(3) {
     bottom: 0;
   }
 }

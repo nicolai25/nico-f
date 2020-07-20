@@ -5,8 +5,8 @@
 /* ---------> header */
 
 /* 色の上書き指定 */
-.bg-light {
-  background-color: rgba(0, 0, 0, 0.5) !important;
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar-light .navbar-nav .nav-link,
@@ -90,8 +90,8 @@ li .nav-item,
     height: 60px;
   }
 
-  .bg-light {
-    background-color: rgba(0, 0, 0, 1) !important;
+  nav {
+    background-color: rgba(0, 0, 0, 1);
   }
 
   .navbar-expand-xl .navbar-nav .nav-link {

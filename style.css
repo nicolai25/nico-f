@@ -1,9 +1,139 @@
 /* -------> common */
 
+
 /* <------- common */
 
 /* ---------> header */
 
+/* 色の上書き指定 */
+.bg-light {
+    background-color:rgba(0, 0, 0, 0.5)!important;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link.active {
+    color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #999999;
+}
+
+.dropdown-menu.show {
+    background-color: #000000;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #664229;
+    color: #ffffff;
+}
+
+/* バーの指定（min-1200px）　*/
+.navber {
+    height: 90px;
+}
+    
+.img_size {
+    width: 143px;
+    height: 24.5px;
+}
+
+.navbar-expand-xl .navbar-collapse{
+
+    justify-content: flex-end;
+}
+
+li .nav-item, .nav-link {
+    font-family: Verdana;
+    font-size: 14px;
+    font-weight: 300;
+    height: 100%;
+}
+
+.navbar-expand-xl .navbar-nav .nav-link{
+    padding: 26.5px 21px;
+}
+
+/* ドロップダウンメニューの上書き指定 */
+.dropdown-item {
+    color: #ffffff;
+    font-family: Verdana;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 15px 30px;
+}
+
+.dropdown .dropdown-menu.show{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    border-radius: 0px;
+    top: 82px;
+}
+
+.dropdown-toggle:after {
+    content: none;
+   }
+
+@media (max-width: 1199px) {
+/* ホバー時の色取り消し */
+    .dropdown-item:focus, .dropdown-item:hover {
+        background-color: black;
+        color: #ffffff;
+    }
+
+/* 小画面時基本指定 */
+    .navber {
+        height: 60px;
+    }
+
+    .bg-light {
+        background-color:rgba(0,0,0,1)!important;
+    }
+
+        
+    .navbar-expand-xl .navbar-nav .nav-link  {
+        padding: 18px 0px;
+    }
+
+/* マークの消去 */
+    button:focus {
+        outline: none;
+    }
+        
+/* ハンバーガーバーの再作成 */
+    .navbar-toggler,
+    .navbar-toggler span {
+        display: inline-block;
+        transition: all .4s;
+        box-sizing: border-box;
+    }
+
+    .navbar-toggler {
+        position: relative;
+        width: 20px;
+        height: 16px;
+    }
+
+    .navbar-toggler span {
+        position: absolute;
+        left: 0;
+        width: 20px;
+        height: 2px;
+        background-color: #ffffff;
+        border-radius: 2px;
+    }
+
+    .navbar-toggler span:nth-of-type(1) {
+        top: 0;
+    }
+    .navbar-toggler span:nth-of-type(2) {
+        top: 6px;
+        }
+    .navbar-toggler span:nth-of-type(3) {
+        bottom: 0;
+    }
+}
 /* <--------- header */
 
 /* ---------> main */

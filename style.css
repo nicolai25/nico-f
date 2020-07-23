@@ -9,7 +9,7 @@ body {
 
 /* ---------> header */
 #header {
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   top: 0;
@@ -20,8 +20,8 @@ body {
   padding: 0;
 }
 
-#header .bg-dark {
-  background-color: #000 !important;
+#header .bg-color {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #header .navbar-brand {
@@ -39,154 +39,97 @@ body {
 }
 
 #header .nav-item .nav-link {
+  color: #fff;
   padding: 33px 21px;
+  font-size: 14px;
+}
+
+#header .nav-item .nav-link:hover {
+  color: #999;
 }
 
 #header .dropdown-menu {
   background-color: #000000;
+  width: 220px;
+  border: 0;
+  border-radius: 0;
 }
 
 #header .dropdown-menu .dropdown-item {
   color: #fff;
+  line-height: 50px;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 0 0 0 18px;
 }
+
+#header .dropdown-menu .dropdown-item:hover {
+  background-color: #442606;
+}
+
+/* <--------- header */
+
+/* ---------> main */
 
 main .hero {
   background-image: url('./bg.JPG');
   background-size: cover;
   background-position: center;
 }
+/* <--------- main */
+
+/* ---------> footer */
+
+/* <--------- footer */
+
+/* ---------> responsive */
 
 @media (max-width: 1199px) {
-  #header .nav-item .nav-link {
-    padding: 0px 50px;
-    line-height: 50px;
-    font-size: 14px;
+  /* -------> common */
+
+  /* <------- common */
+  /* ---------> header */
+  #header .bg-color {
+    background-color: rgba(0, 0, 0, 1);
   }
+
+  #header .nav-item .nav-link {
+    padding: 0px 65px;
+    line-height: 50px;
+    font-size: 13px;
+  }
+
   #header .navbar-nav {
     margin-right: 0;
   }
 
-  #header .dropdown-item {
-    padding: 0 50px;
-    line-height: 50px;
-    font-size: 14px;
+  #header .dropdown-menu {
+    background-color: #000000;
+    width: 100%;
   }
-}
 
-/* 
-header nav {
-  background-color: rgba(0, 0, 0, 0.5);
-}
+  #header .dropdown-menu .dropdown-item {
+    padding: 0 70px;
+  }
 
-header .navbar-light .navbar-nav .nav-link,
-header .navbar-light .navbar-nav .show > .nav-link,
-header .navbar-light .navbar-nav .nav-link:focus,
-header .navbar-light .navbar-nav .nav-link.active {
-  color: #fff;
-}
-
-header .navbar-light .navbar-nav .nav-link:hover {
-  color: #999;
-}
-
-header .dropdown-menu.show {
-  background-color: #000;
-}
-
-header .dropdown-item:focus,
-header .dropdown-item:hover {
-  background-color: #664229;
-  color: #fff;
-}
-
-header nav {
-  height: 90px;
-}
-
-header .img-size {
-  width: 143px;
-  height: 24px;
-}
-
-header .navbar-expand-xl .navbar-collapse {
-  justify-content: flex-end;
-}
-
-header li .nav-item,
-header .nav-link {
-  font-size: 14px;
-  font-weight: 300;
-  height: 100%;
-}
-
-header .navbar-expand-xl .navbar-nav .nav-link {
-  padding: 26px 21px;
-}
-
-header .dropdown-item {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 300;
-  padding: 15px 30px;
-}
-
-header .dropdown .dropdown-menu.show {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  border-radius: 0;
-  top: 81px;
-}
-
-header .dropdown-toggle:after {
-  content: none;
-} */
-
-/* <--------- header */
-
-/* ---------> main */
-
-/* <--------- main */
-
-/* ---------> responsive */
-/* 
-@media (max-width: 1199px) {
-  header .dropdown-item:focus,
-  header .dropdown-item:hover {
+  #header .dropdown-menu .dropdown-item:hover {
     background-color: #000;
+  }
+  #header .nav-item .nav-link:hover {
     color: #fff;
-  }
-
-  header nav {
-    height: 60px;
-  }
-
-  header nav {
-    background-color: rgba(0, 0, 0, 1);
-  }
-
-  header .navbar-expand-xl .navbar-nav .nav-link {
-    padding: 18px 0;
   }
 
   header button:focus {
     outline: none;
   }
 
-  header .navbar-toggler,
-  header .navbar-toggler span {
-    display: inline-block;
-    transition: all 0.4s;
-    box-sizing: border-box;
-  }
-
-  header .navbar-toggler {
+  #header .navbar-toggler {
     position: relative;
-    width: 20px;
-    height: 16px;
+    margin-right: 20px;
+    padding: 8px 10px;
   }
 
-  header .navbar-toggler span {
+  #header .navbar-toggler span {
     position: absolute;
     left: 0;
     width: 20px;
@@ -195,19 +138,27 @@ header .dropdown-toggle:after {
     border-radius: 2px;
   }
 
-  header .navbar-toggler span:nth-of-type(1) {
+  #header .navbar-toggler span:nth-of-type(1) {
     top: 0;
   }
-  header .navbar-toggler span:nth-of-type(2) {
-    top: 6px;
+  #header .navbar-toggler span:nth-of-type(2) {
+    top: 7px;
   }
-  header .navbar-toggler span:nth-of-type(3) {
+  #header .navbar-toggler span:nth-of-type(3) {
     bottom: 0;
   }
-} */
+  /* <--------- header */
+
+  /* ---------> main */
+  main .hero {
+    position: absolute;
+    top: 60px;
+  }
+  /* <--------- main */
+
+  /* ---------> footer */
+
+  /* <--------- footer */
+}
 
 /* <--------- responsive */
-
-/* ---------> footer */
-
-/* <--------- footer */

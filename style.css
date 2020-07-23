@@ -48,6 +48,10 @@ body {
   color: #999;
 }
 
+#header .dropdown-toggle:after {
+  content: none;
+}
+
 #header .dropdown-menu {
   background-color: #000000;
   width: 220px;

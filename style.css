@@ -81,7 +81,7 @@ main .hero {
 /* ---------> responsive */
 
 @media (max-width: 1199px) {
-  header .navbar {
+  header {
     background-color: rgba(0, 0, 0, 1);
   }
 

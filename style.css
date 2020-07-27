@@ -1,16 +1,147 @@
 /* -------> common */
 
+body {
+  font-family: Verdana;
+}
+
 /* <------- common */
 
 /* ---------> header */
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+header .navbar-brand {
+  padding: 15px 0;
+  margin-left: 70px;
+}
+
+header .navbar-brand img {
+  width: 143px;
+  height: 24px;
+}
+
+header .navbar-nav {
+  margin-right: 70px;
+}
+
+header .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  padding: 33px 21px;
+  font-size: 14px;
+}
+
+header .nav-item .nav-link:hover {
+  color: #999;
+}
+
+header .dropdown-toggle:after {
+  content: none;
+}
+
+header .dropdown-menu {
+  background-color: #000;
+  width: 220px;
+  border: 0;
+  border-radius: 0;
+}
+
+header .dropdown-menu .dropdown-item {
+  color: #fff;
+  line-height: 50px;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 0 0 0 18px;
+}
+
+header .dropdown-menu .dropdown-item:hover {
+  background-color: #442606;
+}
 
 /* <--------- header */
 
 /* ---------> main */
 
+main .hero {
+  background-image: url('./bg.JPG');
+  background-size: cover;
+  background-position: center;
+}
 /* <--------- main */
 
 /* ---------> footer */
 
 /* <--------- footer */
 
+/* ---------> responsive */
+
+@media (max-width: 1199px) {
+  header {
+    background-color: rgba(0, 0, 0, 1);
+  }
+
+  header .navbar-nav .nav-item .nav-link {
+    padding: 0 65px;
+    line-height: 50px;
+    font-size: 13px;
+  }
+
+  header .navbar-nav {
+    margin-right: 0;
+  }
+
+  header .dropdown-menu {
+    background-color: #000;
+    width: 100%;
+  }
+
+  header .dropdown-menu .dropdown-item {
+    padding: 0 70px;
+  }
+
+  header .dropdown-menu .dropdown-item:hover {
+    background-color: #000;
+  }
+  header .nav-item .nav-link:hover {
+    color: #fff;
+  }
+
+  header button:focus {
+    outline: none;
+  }
+
+  header .navbar-toggler {
+    position: relative;
+    margin-right: 20px;
+    padding: 8px 10px;
+  }
+
+  header .navbar-toggler span {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+
+  header .navbar-toggler span:nth-of-type(1) {
+    top: 0;
+  }
+  header .navbar-toggler span:nth-of-type(2) {
+    top: 7px;
+  }
+  header .navbar-toggler span:nth-of-type(3) {
+    bottom: 0;
+  }
+
+  main .hero {
+    position: static;
+  }
+}
+/* <--------- responsive */

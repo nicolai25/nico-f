@@ -103,6 +103,7 @@ main .copy p {
 }
 
 .lead-inner {
+  margin: 0 30px;
   color: #fff;
   text-align: center;
 }
@@ -202,6 +203,9 @@ main .copy p {
     padding-bottom: 32px;
   }
 
+  .lead-inner {
+    margin: 0 20px;
+  }
   .lead-inner h1 {
     margin-bottom: 10px;
     font-size: 20px;

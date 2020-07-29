@@ -2,6 +2,11 @@
 
 body {
   font-family: Verdana;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* <------- common */
@@ -13,7 +18,7 @@ header {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 header .navbar-brand {
@@ -72,6 +77,46 @@ main .hero {
   background-size: cover;
   background-position: center;
 }
+
+main .copy-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .copy p {
+  display: inline-block;
+  margin-top: 100px;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  height: 300px;
+  color: #fff;
+  font-size: 36px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.lead-container {
+  background-color: #000;
+  padding-top: 51px;
+  padding-bottom: 76px;
+  margin-bottom: 40px;
+}
+
+.lead-inner {
+  text-align: center;
+  color: #fff;
+}
+
+.lead-inner h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.lead-inner p {
+  line-height: 36px;
+  font-size: 14px;
+}
+
 /* <--------- main */
 
 /* ---------> footer */
@@ -144,4 +189,27 @@ main .hero {
     position: static;
   }
 }
+
+@media (max-width: 767px) {
+  main .copy p {
+    font-size: 20px;
+    margin-top: 70px;
+    height: 180px;
+  }
+
+  .lead-container {
+    padding-bottom: 32px;
+    margin-bottom: 33px;
+  }
+
+  .lead-inner h1 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .lead-inner p {
+    line-height: 26px;
+  }
+}
+
 /* <--------- responsive */

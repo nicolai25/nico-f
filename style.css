@@ -72,19 +72,19 @@ header .dropdown-menu .dropdown-item:hover {
 
 /* ---------> main */
 
-main .hero {
+#top-message .hero {
   background-image: url('./bg.JPG');
   background-size: cover;
   background-position: center;
 }
 
-main .copy-container {
+#top-message .copy-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-main .copy p {
+#top-message .copy p {
   display: inline-block;
   margin-top: 100px;
   height: 300px;
@@ -95,25 +95,25 @@ main .copy p {
   writing-mode: vertical-rl;
 }
 
-.lead-container {
+#top-message .lead-container {
   margin-bottom: 40px;
   background-color: #000;
   padding-top: 51px;
   padding-bottom: 76px;
 }
 
-.lead-inner {
+#top-message .lead-inner {
   margin: 0 30px;
   color: #fff;
   text-align: center;
 }
 
-.lead-inner h1 {
+#top-message .lead-inner h1 {
   margin-bottom: 20px;
   font-size: 36px;
 }
 
-.lead-inner p {
+#top-message .lead-inner p {
   line-height: 36px;
   font-size: 14px;
 }
@@ -186,32 +186,32 @@ main .copy p {
     bottom: 0;
   }
 
-  main .hero {
+  #top-message .hero {
     position: static;
   }
 }
 
 @media (max-width: 767px) {
-  main .copy p {
+  #top-message .copy p {
     margin-top: 70px;
     height: 180px;
     font-size: 20px;
   }
 
-  .lead-container {
+  #top-message .lead-container {
     margin-bottom: 33px;
     padding-bottom: 32px;
   }
 
-  .lead-inner {
+  #top-message .lead-inner {
     margin: 0 20px;
   }
-  .lead-inner h1 {
+  #top-message .lead-inner h1 {
     margin-bottom: 10px;
     font-size: 20px;
   }
 
-  .lead-inner p {
+  #top-message .lead-inner p {
     line-height: 26px;
   }
 }

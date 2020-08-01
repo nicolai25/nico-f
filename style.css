@@ -5,8 +5,13 @@ body {
   font-weight: 300;
 }
 
-h1 {
+body h1 {
+  font-size: 36px;
   font-family: 'Times New Roman', Times, serif;
+}
+
+body p {
+  font-size: 14px;
 }
 
 /* <------- common */
@@ -84,13 +89,11 @@ header .dropdown-menu .dropdown-item:hover {
   align-items: center;
 }
 
-#top-message .copy p {
+#top-message .copy h1 {
   display: inline-block;
   margin-top: 100px;
   height: 300px;
   color: #fff;
-  font-size: 36px;
-  font-family: 'Times New Roman', Times, serif;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
 }
@@ -110,12 +113,10 @@ header .dropdown-menu .dropdown-item:hover {
 
 #top-message .lead-inner h1 {
   margin-bottom: 20px;
-  font-size: 36px;
 }
 
 #top-message .lead-inner p {
   line-height: 36px;
-  font-size: 14px;
 }
 
 /* <--------- main */

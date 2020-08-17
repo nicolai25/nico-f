@@ -102,7 +102,7 @@ header .dropdown-menu .dropdown-item:hover {
 }
 
 #top-message .lead {
-  padding: 51px 30px 76px 30px;
+  padding: 48px 32px 72px 32px;
   color: #fff;
   background-color: #000;
   text-align: center;
@@ -196,7 +196,7 @@ header .dropdown-menu .dropdown-item:hover {
   }
 
   #top-message .lead {
-    padding: 51px 20px 32px 20px;
+    padding: 48px 24px 32px 24px;
   }
   #top-message .lead h1 {
     margin-bottom: 10px;

@@ -111,7 +111,6 @@ header .dropdown-menu .dropdown-item:hover {
 
 @media (max-width: 1199px) {
   header {
-    position: static;
     background-color: rgba(0, 0, 0, 1);
   }
 
@@ -137,6 +136,7 @@ header .dropdown-menu .dropdown-item:hover {
   header .dropdown-menu .dropdown-item:hover {
     background-color: #000;
   }
+  
   header .nav-item .nav-link:hover {
     color: #fff;
   }
@@ -171,17 +171,16 @@ header .dropdown-menu .dropdown-item:hover {
   }
 
   #top-message .hero {
+    margin-top: 60px;
     height: 500px;
   }
 }
 
 @media (max-width: 767px) {
-
   #top-message .hero {
     height: 400px;
   }
   
-
   #top-message .copy h1 {
     font-size: 20px;
   }

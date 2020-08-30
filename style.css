@@ -220,6 +220,15 @@ header .dropdown-menu .dropdown-item:hover {
   #top-message .lead p {
     line-height: 26px;
   }
+
+  #top-panels .message h1 {
+    font-size: 20px;
+  }
+  
+  #top-panels .message p {
+    line-height: 26px;
+  }
+
 }
 
 /* <--------- responsive */
